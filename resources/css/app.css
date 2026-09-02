@@ -19,10 +19,11 @@ html { scroll-behavior: smooth; }
 :root {
   --white-bg:     #ffffff;
   --blue-accent:  #2e45dd;
-  --fiucsa:       #da0395;
+  --fiucsa:       #e55bba;
   --wine:         #6a0030;
   --black:        #000000;
-  --black-light:  #d5d4d3;
+  --grey-light:   #d5d4d3;
+  --grey:         #a9a8a7;
   --charcoal:     #3a2f2f;
   --white:        #ffffff;
   --green:        #014e32;
@@ -32,7 +33,7 @@ html { scroll-behavior: smooth; }
 .app-shell {
   min-height: 100vh;
   /*max-width: 430px;*/
-  margin: 0 20px;
+  margin: 0 0px;
   display: flex;
   flex-direction: column;
   background: var(--white-bg);
@@ -67,15 +68,15 @@ main.page { flex: 1; }
 .nav-links { display: flex; gap: 18px; }
 .nav-link {
   font-size: 15px; font-weight: 700; letter-spacing: 0.08em;
-  text-transform: uppercase; color: var(--white);
+  text-transform: uppercase; color: var(--fiucsa);
   padding: 6px 2px;
   border-bottom: 2px solid transparent;
   text-decoration: none;
   transition: color 0.2s, border-color 0.2s;
 }
 .nav-link.active, .nav-link:hover {
-  color: var(--fiucsa-accent);
-  border-bottom-color: var(--fiucsa-accent);
+  color: var(--white);
+  border-bottom-color: var(--white);
 }
 
 /* ── Buttons ───────────────────────────────── */
@@ -195,7 +196,7 @@ main.page { flex: 1; }
 .placeholder-block {
   display: flex; align-items: center; justify-content: center;
   min-height: 160px;
-  border: 2px dashed var(--black-light);
+  border: 2px dashed var(--grey-light);
   border-radius: 8px;
   background: var(--white-bg);
   color: var(--black);
@@ -206,9 +207,9 @@ main.page { flex: 1; }
 
 /* ── Footer ────────────────────────────────── */
 .footer {
-  background: var(--white); color: var(--charcoal);
+  background: var(--grey); color: var(--charcoal);
   padding: 28px 24px; text-align: center;
-  border-top: 1px solid var(--black-light);
+  border-top: 1px solid var(--grey-light);
 }
 .footer img {
   width: 44px; height: 44px; border-radius: 50%;

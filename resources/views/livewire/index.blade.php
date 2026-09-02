@@ -1,12 +1,8 @@
 {{-- resources/views/livewire/index.blade.php --}}
-<div>
-    
+<div class="app-shell">
 
     <div id="inicio">
-        {{-- ── Carrusel (se implementará más adelante) ── --}}
-        <div class="placeholder-block" style="border-radius: 0; min-height: 90px;">
-            Carrusel — próximamente
-        </div>
+        <img src="{{ asset('images/logo.jpg') }}" alt="Logo" class="logo" style="margin: 0px 24px; width: 120px; height: auto;" />
 
     </div>
     {{-- ── Header ── --}}
@@ -18,7 +14,7 @@
         </div>
     </nav>
 
-    <div>
+    <main class="page">
         {{-- ── Sobre nosotros ── --}}
         <section style="padding: 20px 24px;">
             <h1 class="section-title">Acerca de nosotros</h1>
@@ -27,11 +23,8 @@
             <div class="placeholder-block">
                 Sección "Sobre nosotros" — próximamente
             </div>
-        </section>    
-    </div>
-    {{-- ── Footer ── --}}
-    <footer class="footer">
-        <p class="name">Estambres Dicoy</p>
-        <p class="copyright">&copy; {{ date('Y') }} Estambres Dicoy. Todos los derechos reservados.</p>
-    </footer>
+        </section>
+    </main>
+
+    <x-footer />
 </div>
